@@ -6,7 +6,9 @@
     font-size: 1rem;
     font-weight: 600;
 }
-
+html {
+  scroll-padding-top: 40px;
+}
 /*templates*/
 .area-clicavel{
     position: absolute;
@@ -116,7 +118,7 @@
     border-radius: 50px;
     padding: 0.5rem 1.25rem;
     flex: 1 1 auto;
-    transition: background-color 0.5s ease; 
+    transition: background-color 0.5s ease;
 }
 .menu:hover{
     background-color: rgba(76, 170, 215, 0.20);
@@ -175,7 +177,7 @@
     border-radius: 20px;
 }
 
-/* sec-informaçoes */
+/* container primeiros cards */
 .container-arredondado{
     background-color: white;
 }
@@ -199,6 +201,22 @@
     border-radius: 15px;
     width: max-content;
 }
+/*section sobre*/
+.container-sobre{
+    background-color: rgb(248,249,250);
+}
+.card-funcionamento{
+    background-image: linear-gradient(to bottom right,#4caad76a,#4caad76a,#9be5aa6a);
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.img-funcionamento{
+    border-radius: 15px;
+}
+/*section ia*/
+.titulo-ia{
+    color: #4caad7;
+}
 /*.container-avaliacoes*/
 .container-avaliacoes{
     background-color: rgb(248,249,250);
@@ -208,4 +226,13 @@
     align-items: center;
     border-radius: 20px;
     background-color: #7cb9e833;
+}
+/*formulario*/
+#section-form{
+    background-color: #4caad7;
+}
+@media(min-width:992px){
+    #section-form{
+        padding: 0% 30%;
+    }
 }

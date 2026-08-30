@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEURO CARE</title>
+    <title>Neuro Care</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -32,27 +33,28 @@
                 <div class="offcanvas-body container-links-header ms-lg-auto p-2 d-flex flex-column flex-lg-row"
                     id="container-opcoes">
                     <div class="nav-item" data-bs-dismiss="offcanvas">
-                        <a href="#teste" class="menu nav-link">O desafio</a>
+                        <a href="#desafio" class="menu nav-link">O desafio</a>
+                    </div>
+                    
+                    <div class="nav-item" data-bs-dismiss="offcanvas">
+                        <a href="#comoFunciona" class="menu nav-link">Como funciona</a>
                     </div>
                     <div class="nav-item" data-bs-dismiss="offcanvas">
-                        <a href="#" class="menu nav-link">A IA</a>
+                        <a href="#ia" class="menu nav-link">A IA</a>
                     </div>
                     <div class="nav-item" data-bs-dismiss="offcanvas">
-                        <a href="#" class="menu nav-link">Como funciona</a>
-                    </div>
-                    <div class="nav-item" data-bs-dismiss="offcanvas">
-                        <a href="#" class="menu nav-link">Dúvidas</a>
+                        <a href="#naPratica" class="menu nav-link">Na Prática</a>
                     </div>
                     <div>
                         <div class="d-flex d-sm-none">
-                            <a href="#" class="menu-color fs-6 fs-sm-3">Entrar em contato</a>
+                            <a href="#section-form" class="menu-color fs-6 fs-sm-3">Entrar em contato</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container-hamburguer-header">
                 <div class="d-none d-sm-flex">
-                    <a href="#" class="menu-color fs-6 fs-sm-3">Entrar em contato</a>
+                    <a href="#section-form" class="menu-color fs-6 fs-sm-3">Entrar em contato</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuNav">
                     <span class="navbar-toggler-icon"></span>
@@ -66,7 +68,9 @@
         <section class="container-fluid hero">
             <div class="container-texto-hero d-flex flex-column gap-3 gap-lg-3 col-lg-4 mb-3">
                 <h1 class="titulo animacao-entrada fs-1">Ninguém precisa lidar com o autismo sozinho</h1>
-                <h2 class="subtitulo fs-5 fs-sm-2 animacao-entrada atraso-2">A NeuroCare conecta pais, professores e terapeutas em uma rede que aprende com cada criança — dando ao professor orientação de crise em tempo real, enquanto pais acompanham a evolução do filho passo a passo.</h2>
+                <h2 class="subtitulo fs-5 fs-sm-2 animacao-entrada atraso-2">A NeuroCare conecta pais, professores e
+                    terapeutas em uma rede que aprende com cada criança — dando ao professor orientação de crise em
+                    tempo real, enquanto pais acompanham a evolução do filho passo a passo.</h2>
                 <div class="container-botoes-hero animacao-entrada atraso-3">
                     <div class="container botao-azul p-3 p-lg-4">
                         <a href="#" class="area-clicavel"></a>
@@ -76,11 +80,13 @@
             </div>
             <img src="img/imgbanner.jpeg" alt="" class="hero-img-mobile d-static d-lg-none">
         </section>
-        <section class="container-fluid container-arredondado">
+        <section class="container-fluid container-arredondado" id="desafio">
             <div class="container">
                 <div class="container">
                     <p class="titulo fs-1">Feito para as dúvidas que <br> ninguém ensinou a <br> responder</p>
-                    <p class="subtitulo fs-5 fs-sm-2">Nem escola nem família recebem um manual. A NeuroCare conecta pais, professores e terapeutas numa rede de apoio baseada em dados, transformando cada crise em um caminho mais claro.</p>
+                    <p class="subtitulo fs-5 fs-sm-2">Nem escola nem família recebem um manual. A NeuroCare conecta
+                        pais, professores e terapeutas numa rede de apoio baseada em dados, transformando cada crise em
+                        um caminho mais claro.</p>
                     <div class="row my-5 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                         <div class="col">
                             <div class="card-duvidas h-100 gap-3 d-flex flex-column p-4">
@@ -96,52 +102,96 @@
                                     </svg>
                                 </div>
                                 <h3>Respostas na hora da crise</h3>
-                                <p class="subtitulo">Durante uma crise, o professor recebe orientações personalizadas na hora — baseadas no perfil da criança, com passos calmos e práticos.</p>
+                                <p class="subtitulo">Durante uma crise, o professor recebe orientações personalizadas na
+                                    hora — baseadas no perfil da criança, com passos calmos e práticos.</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card-duvidas h-100 gap-3 d-flex flex-column p-4">
                                 <div class="icone-card p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open w-6 h-6 text-[#1A2E35]"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-book-open w-6 h-6 text-[#1A2E35]">
+                                        <path d="M12 7v14"></path>
+                                        <path
+                                            d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z">
+                                        </path>
+                                    </svg>
                                 </div>
                                 <h3>Guias sob medida, feitos por quem acompanha</h3>
-                                <p class="subtitulo">O terapeuta registra gatilhos, comportamentos e estratégias de cada criança, e a escola recebe planos de ação personalizados — não genéricos.</p>
+                                <p class="subtitulo">O terapeuta registra gatilhos, comportamentos e estratégias de cada
+                                    criança, e a escola recebe planos de ação personalizados — não genéricos.</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card-duvidas h-100 gap-3 d-flex flex-column p-4">
                                 <div class="icone-card p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock w-6 h-6 text-[#1A2E35]"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-clock w-6 h-6 text-[#1A2E35]">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
                                 </div>
                                 <h3>Acompanhamento que evolui</h3>
-                                <p class="subtitulo">Cada crise gera dados que chegam ao terapeuta, ajudando a refinar o cuidado ao longo do tempo.</p>
+                                <p class="subtitulo">Cada crise gera dados que chegam ao terapeuta, ajudando a refinar o
+                                    cuidado ao longo do tempo.</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card-duvidas h-100 gap-3 d-flex flex-column p-4">
                                 <div class="icone-card p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-puzzle w-6 h-6 text-[#1A2E35]"><path d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-puzzle w-6 h-6 text-[#1A2E35]">
+                                        <path
+                                            d="M15.39 4.39a1 1 0 0 0 1.68-.474 2.5 2.5 0 1 1 3.014 3.015 1 1 0 0 0-.474 1.68l1.683 1.682a2.414 2.414 0 0 1 0 3.414L19.61 15.39a1 1 0 0 1-1.68-.474 2.5 2.5 0 1 0-3.014 3.015 1 1 0 0 1 .474 1.68l-1.683 1.682a2.414 2.414 0 0 1-3.414 0L8.61 19.61a1 1 0 0 0-1.68.474 2.5 2.5 0 1 1-3.014-3.015 1 1 0 0 0 .474-1.68l-1.683-1.682a2.414 2.414 0 0 1 0-3.414L4.39 8.61a1 1 0 0 1 1.68.474 2.5 2.5 0 1 0 3.014-3.015 1 1 0 0 1-.474-1.68l1.683-1.682a2.414 2.414 0 0 1 3.414 0z">
+                                        </path>
+                                    </svg>
                                 </div>
                                 <h3>Uma rede, não um manual</h3>
-                                <p class="subtitulo">Pais, professores e terapeutas no mesmo lugar, trocando informação sobre a mesma criança — sem depender de recados soltos.</p>
+                                <p class="subtitulo">Pais, professores e terapeutas no mesmo lugar, trocando informação
+                                    sobre a mesma criança — sem depender de recados soltos.</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card-duvidas h-100 gap-3 d-flex flex-column p-4">
                                 <div class="icone-card p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check w-6 h-6 text-[#1A2E35]"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-shield-check w-6 h-6 text-[#1A2E35]">
+                                        <path
+                                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z">
+                                        </path>
+                                        <path d="m9 12 2 2 4-4"></path>
+                                    </svg>
                                 </div>
                                 <h3>IA que aprende com casos reais</h3>
-                                <p class="subtitulo">Sem terapeuta cadastrado, uma IA treinada já oferece orientação inicial — e fica mais precisa a cada crise registrada na rede.</p>
+                                <p class="subtitulo">Sem terapeuta cadastrado, uma IA treinada já oferece orientação
+                                    inicial — e fica mais precisa a cada crise registrada na rede.</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card-duvidas h-100 gap-3 d-flex flex-column p-4">
                                 <div class="icone-card p-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-handshake w-6 h-6 text-[#1A2E35]"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"></path><path d="m18 15-2-2"></path><path d="m15 18-2-2"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-heart-handshake w-6 h-6 text-[#1A2E35]">
+                                        <path
+                                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z">
+                                        </path>
+                                        <path
+                                            d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66">
+                                        </path>
+                                        <path d="m18 15-2-2"></path>
+                                        <path d="m15 18-2-2"></path>
+                                    </svg>
                                 </div>
                                 <h3>Painel para os pais</h3>
-                                <p class="subtitulo">Histórico e evolução do seu filho sempre à mão, com visão clara do que tem funcionado.</p>
+                                <p class="subtitulo">Histórico e evolução do seu filho sempre à mão, com visão clara do
+                                    que tem funcionado.</p>
                             </div>
                         </div>
                     </div>
@@ -150,74 +200,277 @@
 
             </div>
         </section>
-        <section class="container-fluid container-avaliacoes p-5">
+        <section class="container-fluid container-sobre py-5" id="comoFunciona">
+            <div class="container">
+                <h1 class="titulo">Como Funciona</h1>
+
+                <div class="row my-5 row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+                    <div class="col">
+                        <div class="card-funcionamento h-100 gap-3 d-flex flex-column p-4">
+                            <p class="subtitulo">01</p>
+                            <h3>Terapeuta monta o perfil da criança</h3>
+                            <p class="subtitulo">O terapeuta registra gatilhos, idade, sexo e comportamentos da criança
+                                — a base que personaliza cada orientação futura.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-funcionamento h-100 gap-3 d-flex flex-column p-4">
+                            <p class="subtitulo">02</p>
+                            <h3>Professor acessa o aluno no app</h3>
+                            <p class="subtitulo">No momento da situação, o professor abre o perfil daquela criança
+                                específica dentro do app.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-funcionamento h-100 gap-3 d-flex flex-column p-4">
+                            <p class="subtitulo">03</p>
+                            <h3>Descreve o que está acontecendo</h3>
+                            <p class="subtitulo">Em poucas palavras, relata rapidamente a situação em sala.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-funcionamento h-100 gap-3 d-flex flex-column p-4">
+                            <p class="subtitulo">04</p>
+                            <h3>Recebe orientação da IA</h3>
+                            <p class="subtitulo">A IA responde com passos claros, construídos a partir dos dados que o
+                                terapeuta daquela criança já cadastrou — não uma orientação genérica.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-funcionamento h-100 gap-3 d-flex flex-column p-4">
+                            <p class="subtitulo">05</p>
+                            <h3>Professor dá feedback ao terapeuta</h3>
+                            <p class="subtitulo">Depois do evento, registra o que funcionou (ou não), fechando o ciclo
+                                com quem acompanha a criança.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-funcionamento h-100 gap-3 d-flex flex-column p-4">
+                            <p class="subtitulo">06</p>
+                            <h3>Terapeuta ajusta as estratégias</h3>
+                            <p class="subtitulo">Com base no feedback real, refina orientações e gatilhos para a próxima
+                                ocorrência.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row card-duvidas p-4 justify-content-between align-items-center">
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                        <img src="img/imgbanner.jpeg" class="img-funcionamento img-fluid">
+                    </div>
+                    <div class="col-lg-5 d-flex flex-column  justify-content-center align-items-center gap-4">
+                        <h1 class="titulo">Do desespero de um momento à confiança do dia seguinte</h1>
+                        <p class="subtitulo">Planos de apoio personalizados, biblioteca de estratégias e um histórico da
+                            jornada da criança — tudo em um só lugar, acessível pelo celular a qualquer hora.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container container-ia p-5" id="ia">
+            <h1 class="titulo mb-2">Reforça quem já cuida, assume quando falta equipe</h1>
+            <h5 class="subtitulo mb-5">Nem toda criança tem equipe multidisciplinar disponível. Veja como a orientação se adapta aos dois cenários.</h5>
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col-12 col-md-6 pe-md-4 position-relative">
+                    <h3 class="titulo-ia mb-4">Com equipe multidisciplinar</h3>
+                    <p class="subtitulo">As orientações partem direto do que o terapeuta responsável já definiu para aquela criança — gatilhos, estratégias e histórico registrados por quem acompanha de perto. Esse é o cenário ideal.</p>
+
+                    <div
+                        class="d-none d-md-block position-absolute top-0 end-0 bottom-0 border-end border-secondary-subtle">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 ps-md-4">
+                    <h3 class="titulo-ia mb-4">Sem equipe multidisciplinar</h3>
+                    <p class="subtitulo">Quando a equipe optou por não participar ou ainda não existe, uma IA treinada assume: orienta o professor com base em casos semelhantes e se aprimora a cada evento, do mesmo jeito que um profissional faria — sem nunca substituir o acompanhamento multidisciplinar.</p>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid container-avaliacoes p-2 p-md-5" id="naPratica">
             <div class="container">
                 <div class="container">
                     <p class="titulo fs-1">Como a NeuroCare ajudaria em momentos como esses</p>
-                    <p class="subtitulo fs-5 fs-sm-2">Nem escola nem família recebem um manual. A NeuroCare conecta pais, professores e terapeutas numa rede de apoio baseada em dados, transformando cada crise em um caminho mais claro.</p>
+                    <p class="subtitulo fs-5 fs-sm-2">Nem escola nem família recebem um manual. A NeuroCare conecta
+                        pais, professores e terapeutas numa rede de apoio baseada em dados, transformando cada crise em
+                        um caminho mais claro.</p>
                     <div class="row my-5 row-cols-1 row-cols-lg-3 g-4">
                         <div class="col">
                             <div class="card-duvidas h-100 gap-3 d-flex flex-column p-4">
                                 <div class="estrelas-avaliacao d-flex gap-1 p-2">
-                                    
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+
                                 </div>
-                                
-                                <p class="subtitulo h-100">"Antes eu só via a crise acontecer e não entendia por quê. Agora acompanho no painel os gatilhos e a evolução do meu filho semana a semana — finalmente enxergo os padrões."</p>
+
+                                <p class="subtitulo h-100">"Antes eu só via a crise acontecer e não entendia por quê.
+                                    Agora acompanho no painel os gatilhos e a evolução do meu filho semana a semana —
+                                    finalmente enxergo os padrões."</p>
                                 <h5>Fernanda Lima</h3>
-                                <h6 class="subtitulo">Mãe do Davi, 6 anos</h4>
+                                    <h6 class="subtitulo">Mãe do Davi, 6 anos</h4>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card-duvidas h-100 gap-3 d-flex flex-column p-4">
                                 <div class="estrelas-avaliacao d-flex gap-1 p-2">
-                                    
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+
                                 </div>
-                                
-                                <p class="subtitulo h-100">"No meio de uma crise em sala, recebi um passo a passo na hora. Consegui acalmar o aluno sem precisar interromper a aula toda."</p>
+
+                                <p class="subtitulo h-100">"No meio de uma crise em sala, recebi um passo a passo na
+                                    hora. Consegui acalmar o aluno sem precisar interromper a aula toda."</p>
                                 <h5>Rafael Andrade</h3>
-                                <h6 class="subtitulo">Professor do 2º ano</h4>
+                                    <h6 class="subtitulo">Professor do 2º ano</h4>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card-duvidas h-100 gap-3 d-flex flex-column p-4">
                                 <div class="estrelas-avaliacao d-flex gap-1 p-2">
-                                    
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round" class="col-1 lucide lucide-star w-4 h-4 fill-current"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
-                                    
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="rgb(244,164,96)" stroke="currentColor" stroke-width="0"
+                                        stroke-linecap="round" stroke-linejoin="round"
+                                        class="col-1 lucide lucide-star w-4 h-4 fill-current">
+                                        <path
+                                            d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z">
+                                        </path>
+                                    </svg>
+
                                 </div>
-                                
-                                <p class="subtitulo h-100">"Toda a equipe pedagógica segue as mesmas orientações agora, e sempre reforçando o encaminhamento pro terapeuta responsável. Mudou nossa rotina."</p>
+
+                                <p class="subtitulo h-100">"Toda a equipe pedagógica segue as mesmas orientações agora,
+                                    e sempre reforçando o encaminhamento pro terapeuta responsável. Mudou nossa rotina."
+                                </p>
                                 <h5>Cláudia Bianchi</h3>
-                                <h6 class="subtitulo">Coordenadora pedagógica</h4>
+                                    <h6 class="subtitulo">Coordenadora pedagógica</h4>
                             </div>
                         </div>
-                        <div class="col h-50 gap-3 d-flex flex-column p-4 container-dados-avaliacoes">
-                            <h2>3 perfis</h2>
-                            <h4 class="subtitulo">pais, professores e terapeutas na mesma rede</h4>
+                        <div class="col">
+                            <div class="h-100 text-center gap-3 d-flex flex-column p-4 container-dados-avaliacoes">
+                                <h2>3 perfis</h2>
+                                <h4 class="subtitulo">pais, professores e terapeutas na mesma rede</h4>
+                            </div>
                         </div>
-                        <div class="col h-50 gap-3 d-flex flex-column p-4 container-dados-avaliacoes">
-                            <h2>24h</h2>
-                            <h4 class="subtitulo">disponível todos os dias</h4>
+
+                        <div class="col">
+                            <div class="h-100 text-center gap-3 d-flex flex-column p-4 container-dados-avaliacoes">
+                                <h2>24h</h2>
+                                <h4 class="subtitulo">disponível todos os dias</h4>
+                            </div>
                         </div>
-                        <div class="col h-50 gap-3 d-flex flex-column p-4 container-dados-avaliacoes">
-                            <h2>100%</h2>
-                            <h4 class="subtitulo">personalizado por criança</h4>
+                        <div class="col">
+                            <div class="h-100 text-center gap-3 d-flex flex-column p-4 container-dados-avaliacoes">
+                                <h2>100%</h2>
+                                <h4 class="subtitulo">personalizado por criança</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -225,10 +478,59 @@
 
             </div>
         </section>
+        <section class="container-fluid d-flex justify-content-center align-items-center flex-column text-center py-5"
+            id="section-form">
+            <h1 class="titulo">Comece hoje a entender melhor a criança que você cuida</h1>
+            <p class="subtitulo fs-5 fs-sm-2">Deixe seu nome e e-mail para falar com um especialista da NeuroCare e
+                receber sua primeira orientação personalizada.</p>
+            <form class="form-group card-duvidas p-5 text-start container mt-5" id="formulario">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Como podemos te chamar?</label>
+                    <input type="text" class="form-control" id="nome">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone / Celular</label>
+                    <input type="text" class="form-control" id="telefone" placeholder="(00) 00000-0000">
+                </div>
+                <button type="submit" class="btn btn-primary my-3 container-fluid">Fale Conosco</button>
+                <p class="subtitulo mt-3" id="mensagemFeedback"></p>
+            </form>
+        </section>
     </main>
-    <footer>
-    </footer>
+    <footer class="container p-5">
+        <div class="row justify-content-between mb-4">
+            <div class="col-md-3 d-flex justify-content-center align-items-center mb-4 mb-lg-0">
+                <img src="img/logo.png" class="logo img-fluid">
+            </div>
 
+            <div class="d-flex flex-column flex-lg-row col-md-6">
+                <div>
+                    <a href="#desafio" class="menu subtitulo">O desafio</a>
+                </div>
+                
+                <div>
+                    <a href="#comoFunciona" class="menu subtitulo">Como funciona</a>
+                </div>
+                <div>
+                    <a href="#ia" class="menu subtitulo">A IA</a>
+                </div>
+                <div>
+                    <a href="#naPratica" class="menu subtitulo">Na Prática</a>
+                </div>
+                <div>
+                    <a href="#section-form" class="menu subtitulo">Formulário</a>
+                </div>
+            </div>
+        </div>
+        <p class="subtitulo text-center">Acolhe — apoio com IA para famílias e educadores. Conteúdo educativo, não
+            substitui avaliação profissional.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
 </body>
 
 </html>
