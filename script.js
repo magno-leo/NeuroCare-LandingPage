@@ -1,3 +1,7 @@
+import { database } from "./firebase-config.js";
+import { ref, push } from "https://www.gstatic.com/firebasejs/12.18.0/firebase-database.js";
+
+
 window.addEventListener('scroll', function () {
   const header = document.getElementById('header');
   const containerLinks = document.getElementById('container-opcoes');
@@ -88,7 +92,9 @@ inputTelefone.addEventListener('blur', () => {
   animarValidacao(inputTelefone, validarTelefone(inputTelefone.value));
 });
 
-formulario.addEventListener('submit', function (e) {
+
+
+formulario.addEventListener('submit', async function (e) {
   e.preventDefault();
 
   const nomeValido = validarNome(inputNome.value);
@@ -102,17 +108,40 @@ formulario.addEventListener('submit', function (e) {
   const valido = nomeValido && emailValido && telefoneValido;
 
   if (valido) {
-    mensagemFeedback.textContent = "✅ Formulário enviado com sucesso! Dados salvos.";
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 }
-    });
-    mensagemFeedback.style.color = "green";
-    formulario.reset();
     [inputNome, inputEmail, inputTelefone].forEach(limparValidacao);
+
+    const dados = {
+      nome: inputNome.value,
+      email: inputEmail.value,
+      telefone: inputTelefone.value,
+      criadoEm: Date.now()
+    };
+  
+    try {
+      // "usuarios" será o nó onde os dados serão armazenados
+      const usuariosRef = ref(database, "usuarios");
+  
+      // push cria um ID único automaticamente
+      await push(usuariosRef, dados);
+  
+      alert("Dados enviados com sucesso!");
+      mensagemFeedback.textContent = "✅ Formulário enviado com sucesso! Dados salvos.";
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+      mensagemFeedback.style.color = "green";
+      formulario.reset();
+  
+    } catch (erro) {
+      console.error("Erro ao salvar:", erro);
+      alert("Não foi possível enviar os dados.");
+    }
   } else {
     mensagemFeedback.textContent = "❌ Erro: Por favor, preencha todos os campos corretamente antes de enviar.";
     mensagemFeedback.style.color = "red";
   }
 });
+
+
