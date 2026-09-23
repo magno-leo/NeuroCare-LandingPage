@@ -17,6 +17,7 @@ A Neurocare é uma plataforma que conecta pais, professores e profissionais de s
 
 - HTML5
 - CSS3
+- Bootstrap5
 
 ## 🎯 Motivação
 
